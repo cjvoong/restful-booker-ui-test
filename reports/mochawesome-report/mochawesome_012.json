@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-10-13T10:21:54.031Z",
+    "end": "2020-10-13T10:21:57.336Z",
+    "duration": 3305,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4dc9b3a3-0c0d-4f6e-95aa-f47f1a5e7499",
+      "title": "",
+      "fullFile": "cypress/tests/contact_us.feature",
+      "file": "cypress/tests/contact_us.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cb49632f-6e5d-405c-9cb1-d444427b697c",
+          "title": "contact us",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Fill contact us and submit commands version",
+              "fullTitle": "contact us Fill contact us and submit commands version",
+              "timedOut": null,
+              "duration": 1837,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "TypeError: Cannot read property '0' of undefined",
+                "estack": "TypeError: Cannot read property '0' of undefined\n    at Context.<anonymous> (https://aw1.automationintesting.online/__cypress/tests?p=cypress/tests/contact_us.feature-842:34:33)\n    at Context.resolveAndRunStepDefinition (https://aw1.automationintesting.online/__cypress/tests?p=cypress/tests/contact_us.feature-842:10434:9)\n    at Context.<anonymous> (https://aw1.automationintesting.online/__cypress/tests?p=cypress/tests/contact_us.feature-842:9776:35)",
+                "diff": null
+              },
+              "uuid": "b16cfa94-6e26-40ef-be69-035c5a6f70ac",
+              "parentUUID": "cb49632f-6e5d-405c-9cb1-d444427b697c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b16cfa94-6e26-40ef-be69-035c5a6f70ac"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1837,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "charts": false,
+        "html": false,
+        "json": true,
+        "reportDir": "reports/mochawesome-report",
+        "overwrite": false
+      },
+      "version": "4.1.0"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "restful-booker-ui-tests",
+  "version": "0.0.1",
+  "description": "frontend tests for restful booker website",
+  "license": "MIT",
+  "author": "Front End Team",
+  "scripts": {
+    "cy:open": "cypress open -e TAGS='not @Pending'",
+    "cy:all": "cypress run -e TAGS='not @Pending' --reporter mochawesome",
+    "cuke-merge": "cucumber-json-merge --dir reports/cucumber-json/ --out reports/cucumber-output.json",
+    "merge": "mochawesome-merge reports/mochawesome-report/*.json > reports/output.json",
+    "generate_report": "marge reports/output.json --reportDir reports/ --inline",
+    "prettier": "prettier --write \\\"/**/*.js\\\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@testing-library/cypress": "^6.0.0",
+    "cypress": "4.3.0",
+    "cypress-cucumber-preprocessor": "^2.0.1",
+    "prettier": "^1.19.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0",
+    "mochawesome-merge": "^4.0.0",
+    "cucumber-json-merge": "^0.0.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "commonPath": "cypress/steps/common",
+    "stepDefinitions": "cypress/steps",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "reports/cucumber-json",
+      "filePrefix": "",
+      "fileSuffux": ".cucumber"
+    }
+  }
+}

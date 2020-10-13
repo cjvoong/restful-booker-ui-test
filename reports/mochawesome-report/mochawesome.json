@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-10-12T16:26:46.050Z",
+    "end": "2020-10-12T16:26:46.574Z",
+    "duration": 524,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e775db27-bd63-4894-b045-9334b3db9699",
+      "title": "",
+      "fullFile": "cypress/tests/contact_us.feature",
+      "file": "cypress/tests/contact_us.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2c19ebe0-f14a-4249-8f56-7c8f6af261ad",
+          "title": "contact us",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Fill contact us and submit",
+              "fullTitle": "contact us Fill contact us and submit",
+              "timedOut": null,
+              "duration": 420,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: something",
+                "estack": "Error: Step implementation missing for: something\n    at Context.resolveAndRunStepDefinition (https://sports.gstp.uat.skybet.net/__cypress/tests?p=cypress/tests/contact_us.feature-596:10396:11)\n    at Context.<anonymous> (https://sports.gstp.uat.skybet.net/__cypress/tests?p=cypress/tests/contact_us.feature-596:9735:35)",
+                "diff": null
+              },
+              "uuid": "cbd022db-591f-44ee-a954-b85b3d577c70",
+              "parentUUID": "2c19ebe0-f14a-4249-8f56-7c8f6af261ad",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cbd022db-591f-44ee-a954-b85b3d577c70"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 420,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "charts": false,
+        "html": false,
+        "json": true,
+        "reportDir": "reports/mochawesome-report",
+        "overwrite": false
+      },
+      "version": "4.1.0"
+    }
+  }
+}

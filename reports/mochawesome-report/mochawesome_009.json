@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-10-13T10:10:34.712Z",
+    "end": "2020-10-13T10:10:43.585Z",
+    "duration": 8873,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9085b927-48a0-4efe-a7f1-00788d16824b",
+      "title": "",
+      "fullFile": "cypress/tests/contact_us.feature",
+      "file": "cypress/tests/contact_us.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6c86f09e-96fb-4b93-a155-57197b4039eb",
+          "title": "contact us",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Fill contact us and submit",
+              "fullTitle": "contact us Fill contact us and submit",
+              "timedOut": null,
+              "duration": 7287,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `#message`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `#message`, but never found it.\n    at ensureExistence (https://aw1.automationintesting.online/__cypress/runner/cypress_runner.js:137261:32)\n    at Object.ensureElExistence (https://aw1.automationintesting.online/__cypress/runner/cypress_runner.js:137279:12)\n    at ensureExistence (https://aw1.automationintesting.online/__cypress/runner/cypress_runner.js:127867:23)\n    at onFailFn (https://aw1.automationintesting.online/__cypress/runner/cypress_runner.js:127905:9)\n    at tryCatcher (https://aw1.automationintesting.online/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (https://aw1.automationintesting.online/__cypress/runner/cypress_runner.js:6994:31)\n    at Promise._settlePromise (https://aw1.automationintesting.online/__cypress/runner/cypress_runner.js:7051:18)\n    at Promise._settlePromise0 (https://aw1.automationintesting.online/__cypress/runner/cypress_runner.js:7096:10)\n    at Promise._settlePromises (https://aw1.automationintesting.online/__cypress/runner/cypress_runner.js:7172:18)\n    at _drainQueueStep (https://aw1.automationintesting.online/__cypress/runner/cypress_runner.js:3766:12)\n    at _drainQueue (https://aw1.automationintesting.online/__cypress/runner/cypress_runner.js:3759:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://aw1.automationintesting.online/__cypress/runner/cypress_runner.js:3775:5)\n    at Async.drainQueues (https://aw1.automationintesting.online/__cypress/runner/cypress_runner.js:3645:14)",
+                "diff": null
+              },
+              "uuid": "45e32b7e-4fd1-45e0-81ca-fe8e5d167e2f",
+              "parentUUID": "6c86f09e-96fb-4b93-a155-57197b4039eb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "45e32b7e-4fd1-45e0-81ca-fe8e5d167e2f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7287,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "charts": false,
+        "html": false,
+        "json": true,
+        "reportDir": "reports/mochawesome-report",
+        "overwrite": false
+      },
+      "version": "4.1.0"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+[
+  {
+    "description": "\tCreate an automated test that completes the contact us form on the homepage, submits it, and asserts that the form was completed successfully.",
+    "keyword": "Feature",
+    "name": "contact us",
+    "line": 1,
+    "id": "contact-us",
+    "tags": [],
+    "uri": "contact_us.feature",
+    "elements": [
+      {
+        "id": "contact-us;fill-contact-us-and-submit-commands-version",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Fill contact us and submit commands version",
+        "tags": [
+          {
+            "name": "@beginner",
+            "line": 4
+          },
+          {
+            "name": "@contact_us",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the homepage",
+            "result": {
+              "status": "passed",
+              "duration": 1549000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "email",
+                      "phone_number",
+                      "subject",
+                      "message"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Joe Bloggs",
+                      "Joe@email.com",
+                      "07999999999",
+                      "Room enquiry",
+                      "Hi I would like to enquire about availability of the presidential suite!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I fill in contact us form with following details:",
+            "result": {
+              "status": "passed",
+              "duration": 2376000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I submit the form",
+            "result": {
+              "status": "passed",
+              "duration": 97000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should get a success message",
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

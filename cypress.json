@@ -1,0 +1,23 @@
+{
+  "integrationFolder": "cypress/tests/",
+  "ignoreTestFiles": "*.js",
+  "testFiles": "**/*.feature",
+  "baseUrl": "https://sports.gstp.uat.skybet.net",
+  "viewportWidth": 375,
+  "viewportHeight": 667,      
+  "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+  "env": {
+  },
+  "screenshotsFolder": "reports/screenshots",
+  "fixturesFolder": "reports/fixtures",
+  "videosFolder": "reports/videos",
+  "videoUploadOnPasses": false,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "charts": false,
+    "html": false,
+    "json": true,
+    "reportDir": "reports/mochawesome-report",
+    "overwrite": false
+  }
+}

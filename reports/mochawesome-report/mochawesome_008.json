@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-10-13T10:09:14.765Z",
+    "end": "2020-10-13T10:09:19.422Z",
+    "duration": 4657,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "34e8f23b-6ae8-4c8f-b546-a61fe58ad01c",
+      "title": "",
+      "fullFile": "cypress/tests/contact_us.feature",
+      "file": "cypress/tests/contact_us.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "08e33222-31ff-424b-906b-92a85f8d0be7",
+          "title": "contact us",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Fill contact us and submit",
+              "fullTitle": "contact us Fill contact us and submit",
+              "timedOut": null,
+              "duration": 3205,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: I submit the form",
+                "estack": "Error: Step implementation missing for: I submit the form\n    at Context.resolveAndRunStepDefinition (https://aw1.automationintesting.online/__cypress/tests?p=cypress/tests/contact_us.feature-222:10426:11)\n    at Context.<anonymous> (https://aw1.automationintesting.online/__cypress/tests?p=cypress/tests/contact_us.feature-222:9765:35)",
+                "diff": null
+              },
+              "uuid": "32d25854-4808-429e-963e-ab675e5593df",
+              "parentUUID": "08e33222-31ff-424b-906b-92a85f8d0be7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "32d25854-4808-429e-963e-ab675e5593df"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3205,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "charts": false,
+        "html": false,
+        "json": true,
+        "reportDir": "reports/mochawesome-report",
+        "overwrite": false
+      },
+      "version": "4.1.0"
+    }
+  }
+}
