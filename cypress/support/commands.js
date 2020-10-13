@@ -24,13 +24,15 @@
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
+import '@4tw/cypress-drag-drop'
+
 Cypress.Commands.add("submit_contact_us_form", (name, email, phone_number, subject, message) => {
 
-    console.log(name);
-    console.log(email);
-    console.log(phone_number);
-    console.log(subject);
-    console.log(message);
+    cy.log(name);
+    cy.log(email);
+    cy.log(phone_number);
+    cy.log(subject);
+    cy.log(message);
 
     cy.get('#name').type(name);
     cy.get('#email').type(email);
@@ -38,3 +40,16 @@ Cypress.Commands.add("submit_contact_us_form", (name, email, phone_number, subje
     cy.get('#subject').type(subject);
     cy.get('#description').type(message);
 });
+
+Cypress.Commands.add("submit_booking_form", (firstname,lastname,email,phone_number) => {
+    cy.get('input[name="firstname"]').type(firstname);
+    cy.get('input[name="lastname"]').type(lastname);
+    cy.get('input[name="email"]').type(email);
+    cy.get('input[name="phone"]').type(phone_number);    
+});
+
+Cypress.Commands.add("dragTo", { prevSubject: "element" }, (subject, targetEl) => {
+    cy.wrap(subject).trigger("dragstart");
+    cy.get(targetEl).trigger("drop");
+  }
+);
